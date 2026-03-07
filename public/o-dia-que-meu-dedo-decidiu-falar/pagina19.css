@@ -1,67 +1,56 @@
-body {
-    background-color: #4f8937;
+body{
+    background-image: url("../img/backgroud-dinossauro-pc.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Centralização total */
-.frase-final {
-    min-height: calc(100vh - 120px); /* desconta header */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+@font-face {
+    font-family: Motter;
+    src: url("../fonts/motter-corpus-itc-tt.ttf");
 }
 
-/* Controle da imagem/frase */
-.frase-final img {
-    width: 100%;
-    max-width: 800px;   /* desktop */
-    height: auto;
+.texto-final{
+    position:absolute;
+    top:170px;
+    left:140px;
+    width:600px;
 }
 
-/* Ajustes mobile */
-@media (max-width: 600px) {
-    .frase-final img {
-        max-width: 500px; /* menor no celular */
-    }
+.texto-final h1{
+    font-family: Motter;
+    font-size:45px;
+    line-height:50px;
+    color:#F3EED2;
+    margin:0;
+}
+
+.parte-branca{
+    color: #FFFFFF;
+}
+
+/* BOTÃO */
+
+.btn-voltar{
+
+    display:inline-block;
+    margin-top:40px;
+    padding:18px 50px;
+    background:#EFEFEF;
+    border-radius:40px;
+    text-decoration:none;
+    color:#222;
+    font-family:Arial;
 }
 
 
-
-/* Wrapper para imagem + botão */
-.frase-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
+.dedo-img{
+    position: fixed;
+    right: 240px;
+    bottom: 70px;
+    pointer-events: none;
 }
 
-/* Botão Voltar ao início */
-.btn-voltar-inicio {
-    background-color: #ffffff;
-    color: #0C572A; /* mesma identidade verde */
-    font-family: 'Quicksand', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-
-    padding: 12px 26px;
-    border-radius: 30px;
-
-    text-decoration: none;
-    display: inline-block;
-
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-/* Efeito suave */
-.btn-voltar-inicio:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .btn-voltar-inicio {
-        font-size: 13px;
-        padding: 10px 22px;
-    }
+.dedo-img img{
+    width: 600px;
 }
