@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
  
     // === Carrega o áudio da página ===
-    wavesurfer.load("audios/teste.mp3");
+    wavesurfer.load("audios/pag08.mp3");
     
 
 
