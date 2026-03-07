@@ -94,7 +94,8 @@ body{
 }
 
 .dedo-img img{
-    width:520px;
+    width:110vw;
+    max-width:520px;
 }
 
 }
