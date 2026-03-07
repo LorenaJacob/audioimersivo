@@ -54,3 +54,47 @@ body{
 .dedo-img img{
     width: 600px;
 }
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px){
+
+body{
+    background-image: url("../img/backgroud-dinossauro-mobile.jpg");
+}
+
+/* TEXTO */
+
+.texto-final{
+    top:140px;
+    left:30px;
+    width:300px;
+}
+
+.texto-final h1{
+    font-size:32px;
+    line-height:36px;
+}
+
+/* BOTÃO */
+
+.btn-voltar{
+    margin-top:30px;
+    padding:16px 35px;
+}
+
+/* DEDO */
+
+.dedo-img{
+    left: 10px;
+    bottom:100px;
+}
+
+.dedo-img img{
+    width:520px;
+}
+
+}
