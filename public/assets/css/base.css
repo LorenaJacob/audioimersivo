@@ -2,6 +2,11 @@
    1. FONTES E RESET GLOBAL
    ============================================================================ */
 
+@font-face {
+    font-family: "Motter Corpus";
+    src: url("../fonts/motter-corpus-itc-tt.ttf") format("truetype");
+}
+
 /* Reset */
 * {
     margin: 0;

@@ -1,0 +1,64 @@
+﻿/* Ajustes especificos do livro "O dia que meu dente quase fugiu". */
+
+body:not([data-page]) {
+    background-color: #592d6a;
+}
+
+body[data-page] {
+    background-color: #592d6a;
+}
+
+body[data-page] .pagina-indicador {
+    background-color: #ffffe9;
+    color: #7b318b;
+}
+
+body:not([data-page]) .texto-topo,
+body:not([data-page]) .area-ajuda,
+body:not([data-page]) .area-ajuda p,
+body:not([data-page]) .area-ajuda a,
+body:not([data-page]) #entre-contato,
+body[data-page] .area-ajuda,
+body[data-page] .area-ajuda p,
+body[data-page] .area-ajuda a,
+body[data-page] #entre-contato {
+    color: #FFFFFF;
+}
+
+body:not([data-page]) .area-personagem .menina {
+    width: 75%;
+    max-width: 520px;
+    margin-bottom: -14px;
+    position: relative;
+    z-index: 10;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    body:not([data-page]) .area-personagem .menina {
+        margin-bottom: -12px;
+    }
+}
+
+body[data-page="page-final"] .personagem-final img {
+    width: 320px;
+}
+
+body[data-page="page-final"] .personagem-final {
+    right: 240px;
+    bottom: 130px;
+}
+
+@media (max-width: 600px) {
+    body[data-page="page-final"] .personagem-final img {
+        width: 200px;
+    }
+
+    body[data-page="page-final"] .personagem-final {
+        left: 150px;
+        right: auto;
+        bottom: 180px;
+    }
+}
+
+

@@ -1,0 +1,166 @@
+﻿{
+    "book":  {
+                 "title":  "O dia que meu dente quase fugiu",
+                 "slug":  "o-dia-que-meu-dente-quase-fugiu",
+                 "totalPages":  14,
+                 "author":  "Lorena Jacob"
+             },
+    "assets":  {
+                   "globalPath":  "../../assets",
+                   "bookPath":  ".."
+               },
+    "audio":  {
+                  "waveColor":  "#FFA844",
+                  "progressColor":  "#0E6430",
+                  "barWidth":  3,
+                  "barGap":  2,
+                  "height":  60,
+                  "responsive":  true,
+                  "cursorWidth":  0
+              },
+    "pages":  [
+                  {
+                      "number":  "1-2",
+                      "slug":  "page-1-2",
+                      "file":  "page-1-2.html",
+                      "audio":  "audios/pagina01e02.MP3",
+                      "title":  "Página 1 \u0026 2",
+                      "showBackBtn":  false,
+                      "nextPage":  "page-3-4"
+                  },
+                  {
+                      "number":  "3-4",
+                      "slug":  "page-3-4",
+                      "file":  "page-3-4.html",
+                      "audio":  "audios/pagina03e04.MP3",
+                      "title":  "Página 3 \u0026 4",
+                      "showBackBtn":  true,
+                      "prevPage":  "page-1-2",
+                      "nextPage":  "page-5"
+                  },
+                  {
+                      "number":  "5",
+                      "slug":  "page-5",
+                      "file":  "page-5.html",
+                      "audio":  "audios/pagina05.MP3",
+                      "title":  "Página 5",
+                      "showBackBtn":  true,
+                      "prevPage":  "page-3-4",
+                      "nextPage":  "page-6"
+                  },
+                  {
+                      "number":  "6",
+                      "slug":  "page-6",
+                      "file":  "page-6.html",
+                      "audio":  "audios/pagina06.MP3",
+                      "title":  "Página 6",
+                      "showBackBtn":  true,
+                      "prevPage":  "page-5",
+                      "nextPage":  "page-7-8"
+                  },
+                  {
+                      "number":  "7-8",
+                      "slug":  "page-7-8",
+                      "file":  "page-7-8.html",
+                      "audio":  "audios/pagina07e08.MP3",
+                      "title":  "Página 7 \u0026 8",
+                      "showBackBtn":  true,
+                      "prevPage":  "page-6",
+                      "nextPage":  "page-9"
+                  },
+                  {
+                      "number":  "9",
+                      "slug":  "page-9",
+                      "file":  "page-9.html",
+                      "audio":  "audios/pagina09.MP3",
+                      "title":  "Página 9",
+                      "showBackBtn":  true,
+                      "prevPage":  "page-7-8",
+                      "nextPage":  "page-10"
+                  },
+                  {
+                      "number":  "10",
+                      "slug":  "page-10",
+                      "file":  "page-10.html",
+                      "audio":  "audios/pagina10.MP3",
+                      "title":  "Página 10",
+                      "showBackBtn":  true,
+                      "prevPage":  "page-9",
+                      "nextPage":  "page-11-12"
+                  },
+                  {
+                      "number":  "11-12",
+                      "slug":  "page-11-12",
+                      "file":  "page-11-12.html",
+                      "audio":  "audios/pagina11e12.mp3",
+                      "title":  "Página 11 \u0026 12",
+                      "showBackBtn":  true,
+                      "prevPage":  "page-10",
+                      "nextPage":  "page-13-14"
+                  },
+                  {
+                      "number":  "13-14",
+                      "slug":  "page-13-14",
+                      "file":  "page-13-14.html",
+                      "audio":  "audios/pagina13e14.MP3",
+                      "title":  "Página 13 \u0026 14",
+                      "showBackBtn":  true,
+                      "prevPage":  "page-11-12",
+                      "nextPage":  "page-final"
+                  },
+                  {
+                      "number":  "final",
+                      "slug":  "page-final",
+                      "file":  "page-final.html",
+                      "audio":  null,
+                      "title":  "Página Final",
+                      "showBackBtn":  false,
+                      "prevPage":  "page-13-14",
+                      "isFinalPage":  true
+                  }
+              ],
+    "home":  {
+                 "title":  "O dia que meu dente quase fugiu",
+                 "browserTitle":  "O dia que meu dente quase fugiu",
+                 "subtitle":  "ÁUDIOBOOK IMERSIVO",
+                 "titleImage":  "./img/titulo.svg",
+                 "characterImage":  "./img/menina.svg",
+                 "startButtonText":  "INICIAR",
+                 "startButtonLink":  "pages/page-1-2.html"
+             },
+    "header":  {
+                   "links":  {
+                                 "instagramUrl":  "https://www.instagram.com/lorenajacob.st/",
+                                 "collectionUrl":  "#",
+                                 "shopUrl":  "https://www.lorenajacob.com.br/shop",
+                                 "siteUrl":  "https://www.lorenajacob.com.br/",
+                                 "whatsappUrl":  "https://api.whatsapp.com/send/?phone=5527998206121"
+                             },
+                   "labels":  {
+                                  "collection":  "COLEÇÃO",
+                                  "shop":  "LOJA",
+                                  "site":  "SITE",
+                                  "contact":  "ENTRE EM CONTATO"
+                              }
+               },
+    "footer":  {
+                   "copyright":  "©2025 Lorena Jacob • Todos os Direitos Reservados",
+                   "websiteUrl":  "https://www.lorenajacob.com.br/",
+                   "instagramUrl":  "https://www.instagram.com/lorenajacob.st/",
+                   "whatsappUrl":  "https://wa.me/5527998206121?text=Ol%C3%A1%2C%20estou%20com%20problemas%20no%20%C3%A1udiobook%20do%20livro%20%22O%20dia%20que%20meu%20dente%20quase%20fugiu%22"
+               },
+    "helpSection":  {
+                        "text":  "Problemas com o áudio?",
+                        "buttonText":  "Entre em contato aqui",
+                        "whatsappUrl":  "https://wa.me/5527998206121?text=Ol%C3%A1%2C%20estou%20com%20problemas%20no%20%C3%A1udiobook%20do%20livro%20%22O%20dia%20que%20meu%20dente%20quase%20fugiu%22"
+                    },
+    "final":  {
+                  "textHtml":  "\u003cspan class=\"parte-branca\"\u003eQUANDO EU CUIDO DO\u003cbr\u003eMEU CORPO,\u003c/span\u003eELE CUIDA\u003cbr\u003eDE MIM TAMBÉM.",
+                  "buttonText":  "Voltar ao início",
+                  "buttonLink":  "../index.html",
+                  "backgroundDesktop":  "./img/backgroud-dente-pc.svg",
+                  "backgroundMobile":  "./img/backgroud-dente-mobile.svg"
+              }
+}
+
+

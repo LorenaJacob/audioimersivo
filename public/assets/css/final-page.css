@@ -93,6 +93,7 @@ body[data-page="page-final"] {
    4. IMAGEM DO PERSONAGEM (Dedo/Caractere)
    ============================================================================ */
 
+.personagem-final,
 .dedo-img {
     position: fixed;
     right: 240px;
@@ -101,6 +102,7 @@ body[data-page="page-final"] {
     z-index: 3;
 }
 
+.personagem-final img,
 .dedo-img img {
     width: 600px;
     height: auto;
@@ -131,12 +133,14 @@ body[data-page="page-final"] {
         font-size: 15px;
     }
 
+    .personagem-final,
     .dedo-img {
         left: 85px;
         right: auto;
         bottom: 100px;
     }
 
+    .personagem-final img,
     .dedo-img img {
         width: 110vw;
         max-width: 520px;
@@ -166,11 +170,13 @@ body[data-page="page-final"] {
         font-size: 14px;
     }
 
+    .personagem-final,
     .dedo-img {
         left: 50px;
         bottom: 80px;
     }
 
+    .personagem-final img,
     .dedo-img img {
         width: 100vw;
         max-width: 400px;

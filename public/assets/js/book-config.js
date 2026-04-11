@@ -37,7 +37,7 @@ function applyHomeConfig(config) {
 
     if (isHomePage) {
         const titleImageEl = document.querySelector(".titulo");
-        const characterImageEl = document.querySelector(".menino");
+        const characterImageEl = document.querySelector(".menino, .menina");
 
         if (titleImageEl && config.home?.titleImage) {
             titleImageEl.setAttribute("src", config.home.titleImage);

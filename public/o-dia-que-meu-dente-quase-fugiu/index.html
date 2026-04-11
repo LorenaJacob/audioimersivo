@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>O dia que meu dente quase fugiu</title>
+
+    <!-- ================================
+         CSS GLOBAL (usado em todas as páginas)
+         ================================= -->
+    <link rel="stylesheet" href="../assets/css/base.css">
+
+    <!-- ================================
+         CSS DA PÁGINA INICIAL
+         ================================= -->
+    <link rel="stylesheet" href="../assets/css/home-page.css">
+
+    <!-- ================================
+         CSS CUSTOMIZAÇÕES DO LIVRO
+         ================================= -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- ================================
+         Fontes Google
+         ================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         MAIN (CONTEÚDO CENTRAL DA PÁGINA)
+         A página inicial não possui cabeçalho.
+         O conteúdo fica dentro de <main> para responsividade
+         ===================================================== -->
+    <main class="container">
+
+        <!-- =====================================================
+             TOPO — Coração + Texto “Audiobook Imersivo”
+             ===================================================== -->
+        <div class="topo">
+            <img src="../assets/img/coracao.svg" class="icone-coracao" alt="Coração">
+            <span class="texto-topo">ÁUDIOBOOK IMERSIVO</span>
+        </div>
+
+        <!-- =====================================================
+             TÍTULO DO LIVRO (imagem)
+             ===================================================== -->
+        <img class="titulo" src="./img/titulo.svg" alt="Título do Livro">
+
+        <!-- =====================================================
+             PERSONAGEM + BOTÃO INICIAR
+             O personagem fica acima do botão com sobreposição
+             ===================================================== -->
+        <div class="area-personagem">
+            <img class="menina" src="./img/menina.svg" alt="Personagem Menina">
+            <a href="./pages/page-1-2.html" class="btn-iniciar">INICIAR</a>
+        </div>
+
+    </main>
+
+    <!-- =====================================================
+         ÁREA DE AJUDA — Link para suporte no WhatsApp
+         ===================================================== -->
+   <div class="area-ajuda">
+    <p>Problemas com o áudio?</p>
+
+    <a id="entre-contato"
+       href="https://wa.me/5527998206121?text=Ol%C3%A1%2C%20estou%20com%20problemas%20no%20%C3%A1udiobook%20do%20livro%20%22O%20dia%20que%20meu%20dente%20quase%20fugiu%22">
+        <strong>Entre em contato aqui</strong>
+    </a>
+</div>
+
+
+    <!-- =====================================================
+         RODAPÉ — Sempre fixo ao final do conteúdo
+         ===================================================== -->
+    <footer class="rodape">
+        <p>©2025 Lorena Jacob • Todos os Direitos Reservados</p>
+
+        <a href="https://www.lorenajacob.com.br/">
+            <img src="../assets/img/logo.svg" class="logo-rodape" alt="Logo Lorena Jacob">
+        </a>
+    </footer>
+
+    <!-- =====================================================
+         SCRIPT GLOBAL (menu, comportamentos gerais...)
+         ===================================================== -->
+    <script src="../assets/js/base.js"></script>
+    <script src="../assets/js/book-config.js" data-config-path="./config.json"></script>
+
+
+</body>
+</html>
+
+
+
+
