@@ -1,0 +1,202 @@
+{
+  "book": {
+    "title": "O dia que meu dedo decidiu falar",
+    "slug": "o-dia-que-meu-dedo-decidiu-falar",
+    "totalPages": 19,
+    "author": "Lorena Jacob"
+  },
+
+  "assets": {
+    "globalPath": "../../assets",
+    "bookPath": ".."
+  },
+
+  "audio": {
+    "waveColor": "#FFA844",
+    "progressColor": "#0E6430",
+    "barWidth": 3,
+    "barGap": 2,
+    "height": 60,
+    "responsive": true,
+    "cursorWidth": 0
+  },
+
+  "pages": [
+    {
+      "number": "1",
+      "slug": "page-1",
+      "file": "page-1.html",
+      "audio": "audios/pagina01.mp3",
+      "title": "P\u00e1gina 1",
+      "showBackBtn": false,
+      "nextPage": "page-2"
+    },
+    {
+      "number": "2",
+      "slug": "page-2",
+      "file": "page-2.html",
+      "audio": "audios/pagina02.mp3",
+      "title": "P\u00e1gina 2",
+      "showBackBtn": true,
+      "prevPage": "page-1",
+      "nextPage": "page-3-4"
+    },
+    {
+      "number": "3-4",
+      "slug": "page-3-4",
+      "file": "page-3-4.html",
+      "audio": "audios/pagina03e04.mp3",
+      "title": "P\u00e1gina 3 & 4",
+      "showBackBtn": true,
+      "prevPage": "page-2",
+      "nextPage": "page-5-6"
+    },
+    {
+      "number": "5-6",
+      "slug": "page-5-6",
+      "file": "page-5-6.html",
+      "audio": "audios/pagina05e06.mp3",
+      "title": "P\u00e1gina 5 & 6",
+      "showBackBtn": true,
+      "prevPage": "page-3-4",
+      "nextPage": "page-7"
+    },
+    {
+      "number": "7",
+      "slug": "page-7",
+      "file": "page-7.html",
+      "audio": "audios/pagina07.mp3",
+      "title": "P\u00e1gina 7",
+      "showBackBtn": true,
+      "prevPage": "page-5-6",
+      "nextPage": "page-8"
+    },
+    {
+      "number": "8",
+      "slug": "page-8",
+      "file": "page-8.html",
+      "audio": "audios/pagina08.MP3",
+      "title": "P\u00e1gina 8",
+      "showBackBtn": true,
+      "prevPage": "page-7",
+      "nextPage": "page-9"
+    },
+    {
+      "number": "9",
+      "slug": "page-9",
+      "file": "page-9.html",
+      "audio": "audios/pag09.mp3",
+      "title": "P\u00e1gina 9",
+      "showBackBtn": true,
+      "prevPage": "page-8",
+      "nextPage": "page-10"
+    },
+    {
+      "number": "10",
+      "slug": "page-10",
+      "file": "page-10.html",
+      "audio": "audios/pagina10.mp3",
+      "title": "P\u00e1gina 10",
+      "showBackBtn": true,
+      "prevPage": "page-9",
+      "nextPage": "page-11-12"
+    },
+    {
+      "number": "11-12",
+      "slug": "page-11-12",
+      "file": "page-11-12.html",
+      "audio": "audios/pagina11e12.mp3",
+      "title": "P\u00e1gina 11 & 12",
+      "showBackBtn": true,
+      "prevPage": "page-10",
+      "nextPage": "page-13-14"
+    },
+    {
+      "number": "13-14",
+      "slug": "page-13-14",
+      "file": "page-13-14.html",
+      "audio": "audios/pagina13e14.mp3",
+      "title": "P\u00e1gina 13 & 14",
+      "showBackBtn": true,
+      "prevPage": "page-11-12",
+      "nextPage": "page-15-16"
+    },
+    {
+      "number": "15-16",
+      "slug": "page-15-16",
+      "file": "page-15-16.html",
+      "audio": "audios/pagina15e16.mp3",
+      "title": "P\u00e1gina 15 & 16",
+      "showBackBtn": true,
+      "prevPage": "page-13-14",
+      "nextPage": "page-17-18"
+    },
+    {
+      "number": "17-18",
+      "slug": "page-17-18",
+      "file": "page-17-18.html",
+      "audio": "audios/pag17e18.mp3",
+      "title": "P\u00e1gina 17 & 18",
+      "showBackBtn": true,
+      "prevPage": "page-15-16",
+      "nextPage": "page-final"
+    },
+    {
+      "number": "final",
+      "slug": "page-final",
+      "file": "page-final.html",
+      "audio": null,
+      "title": "P\u00e1gina Final",
+      "showBackBtn": false,
+      "prevPage": "page-17-18",
+      "isFinalPage": true
+    }
+  ],
+
+  "home": {
+    "title": "O dia que meu dedo decidiu falar",
+    "browserTitle": "O dia que meu dedo decidiu falar",
+    "subtitle": "\u00c1UDIOBOOK IMERSIVO",
+    "titleImage": "./img/titulo.svg",
+    "characterImage": "./img/menino.svg",
+    "startButtonText": "INICIAR",
+    "startButtonLink": "pages/page-1.html"
+  },
+
+  "header": {
+    "links": {
+      "instagramUrl": "https://www.instagram.com/lorenajacob.st/",
+      "collectionUrl": "#",
+      "shopUrl": "https://www.lorenajacob.com.br/shop",
+      "siteUrl": "https://www.lorenajacob.com.br/",
+      "whatsappUrl": "https://api.whatsapp.com/send/?phone=5527998206121"
+    },
+    "labels": {
+      "collection": "COLE\u00c7\u00c3O",
+      "shop": "LOJA",
+      "site": "SITE",
+      "contact": "ENTRE EM CONTATO"
+    }
+  },
+
+  "footer": {
+    "copyright": "\u00a92025 Lorena Jacob \u2022 Todos os Direitos Reservados",
+    "websiteUrl": "https://www.lorenajacob.com.br/",
+    "instagramUrl": "https://www.instagram.com/lorenajacob.st/",
+    "whatsappUrl": "https://wa.me/5527998206121?text=Ol%C3%A1%2C%20estou%20com%20problemas%20no%20%C3%A1udiobook%20do%20livro%20%22O%20dia%20que%20meu%20dedo%20decidiu%20falar%22"
+  },
+
+  "helpSection": {
+    "text": "Problemas com o \u00e1udio?",
+    "buttonText": "Entre em contato aqui",
+    "whatsappUrl": "https://wa.me/5527998206121?text=Ol%C3%A1%2C%20estou%20com%20problemas%20no%20%C3%A1udiobook%20do%20livro%20%22O%20dia%20que%20meu%20dedo%20decidiu%20falar%22"
+  },
+
+  "final": {
+    "textHtml": "<span class=\"parte-branca\">QUANDO EU CUIDO DO<br>MEU CORPO,</span>ELE CUIDA<br>DE MIM TAMB\u00c9M.",
+    "buttonText": "Voltar ao in\u00edcio",
+    "buttonLink": "../index.html",
+    "backgroundDesktop": "./img/backgroud-dinossauro-pc.jpg",
+    "backgroundMobile": "./img/backgroud-dinossauro-mobile.jpg"
+  }
+}

@@ -1,0 +1,6 @@
+/* Ajustes especificos do livro "O dia que meu dedo decidiu falar". */
+
+@font-face {
+    font-family: "Motter Corpus";
+    src: url("./fonts/motter-corpus-itc-tt.ttf") format("truetype");
+}

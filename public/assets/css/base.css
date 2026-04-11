@@ -1,0 +1,398 @@
+/* ============================================================================
+   1. FONTES E RESET GLOBAL
+   ============================================================================ */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* ============================================================================
+   2. LAYOUT GLOBAL
+   ============================================================================ */
+
+body {
+    background-color: #FEFFF5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    max-width: 390px;
+    padding: 20px;
+    flex: 1; /* empurra rodapé para baixo */
+}
+
+.container {
+    width: 100%;
+    max-width: 390px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+/* ============================================================================
+   3. CABEÇALHO (TOP BAR)
+   ============================================================================ */
+
+.topo-site {
+    width: 100%;
+    background-color: #083B6D;
+    padding: 15px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.logo-topo {
+    height: 36px;
+    width: auto;
+}
+
+/* Botão mobile (hambúrguer) */
+.menu-btn {
+    background-color: #5CC8FF;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-icone {
+    width: 26px;
+    height: 26px;
+}
+
+/* ============================================================================
+   4. MENU DESKTOP
+   ============================================================================ */
+
+.menu-desktop {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu-desktop .item-menu {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    text-decoration: none;
+}
+
+.menu-desktop .icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Botão de contato (laranja) */
+.btn-contato {
+    background-color: #FFA844;
+    padding: 9px 14px;
+    border-radius: 8px;
+
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* ============================================================================
+   5. MENU MOBILE (LATERAL DIREITA)
+   ============================================================================ */
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    right: -80%;
+    width: 80%;
+    height: 100vh;
+    background-color: #083B6D;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    padding: 35px 25px;
+
+    transition: right 0.35s ease-in-out;
+}
+
+.menu-mobile.open {
+    right: 0;
+}
+
+.menu-mobile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.menu-mobile-logo {
+    width: 170px;
+    margin-bottom: 20px;
+}
+
+.menu-mobile-item {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.menu-mobile-item .icon {
+    width: 20px;
+}
+
+/* Linha divisória */
+.menu-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.25);
+}
+
+.menu-btn-contato {
+    background-color: #FFA844;
+    padding: 12px 18px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.45);
+    display: none;
+    z-index: 9998;
+}
+
+.overlay.show {
+    display: block;
+}
+
+/* ============================================================================
+   6. INDICADOR DE PÁGINA
+   ============================================================================ */
+
+.pagina-indicador {
+    background-color: #0C572A;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    width: fit-content;
+    margin: 0 auto 25px;
+}
+
+/* ============================================================================
+   7. PLAYER DE ÁUDIO (COMPARTILHADO ENTRE TODAS AS PÁGINAS)
+   ============================================================================ */
+
+.audio-card {
+    width: 100%;
+    max-width: 360px;
+    background: white;
+    padding: 25px 20px;
+    border-radius: 18px;
+    border: 2px solid rgba(0,0,0,0.15);
+    margin: 40px auto 20px;
+}
+
+/* Área central com player + avançar/voltar */
+.audio-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin-bottom: 20px;
+}
+
+/* Botão Play/Pause circular */
+.audio-play {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 110px;
+    height: 110px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    cursor: pointer;
+}
+
+/* Ícones sobrepostos */
+.audio-play img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    pointer-events: none;
+}
+
+#pauseIcon { display: none; }
+
+/* Avançar / Voltar */
+.audio-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.audio-nav img {
+    width: 30px;
+    opacity: 0.9;
+}
+
+.audio-nav span {
+    font-size: 13px;
+    color: #D7D7D7;
+}
+
+/* Waveform */
+.audio-wave-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#waveform {
+    width: 100%;
+    height: 60px;
+    margin: 0 10px;
+}
+
+/* ============================================================================
+   8. ÁREA DE AJUDA (Usada em todas as páginas)
+   ============================================================================ */
+
+.area-ajuda {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.area-ajuda p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-size: 12px;
+    color: #8F8F8F;
+}
+
+#entre-contato {
+    color: black;
+    font-size: 12px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+
+/* ============================================================================
+   9. RODAPÉ
+   ============================================================================ */
+
+.rodape {
+    width: 100%;
+    background-color: #E6E6E6;
+    padding: 25px 0;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.rodape p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.logo-rodape {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================================================================
+   10. RESPONSIVIDADE (MOBILE/TABLET)
+   ============================================================================ */
+
+.mobile-only { display: block; }
+.desktop-only { display: none; }
+
+@media (min-width: 768px) {
+    .mobile-only { display: none; }
+    .desktop-only { display: flex; }
+}
+
+@media (max-width: 600px) {
+    .rodape {
+        padding: 18px 0;
+    }
+
+    .rodape p {
+        font-size: 11px;
+    }
+}
+
+/* Fix Android A52/A32/Moto G */
+@media screen and (max-height: 800px) {
+    body {
+        min-height: 100dvh !important;
+    }
+}

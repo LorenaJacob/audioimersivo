@@ -8,14 +8,19 @@
     <title>O dia que meu dedo decidiu falar</title>
 
     <!-- ================================
-         CSS PRINCIPAL DA PÁGINA INICIAL
-         ================================= -->
-    <link rel="stylesheet" href="inicio.css">
-
-    <!-- ================================
          CSS GLOBAL (usado em todas as páginas)
          ================================= -->
-     <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+
+    <!-- ================================
+         CSS DA PÁGINA INICIAL
+         ================================= -->
+    <link rel="stylesheet" href="../assets/css/home-page.css">
+
+    <!-- ================================
+         CSS CUSTOMIZAÇÕES DO LIVRO
+         ================================= -->
+    <link rel="stylesheet" href="./styles.css">
 
     <!-- ================================
          Fontes Google
@@ -38,22 +43,22 @@
              TOPO — Coração + Texto “Audiobook Imersivo”
              ===================================================== -->
         <div class="topo">
-            <img src="../img/coracao.svg" class="icone-coracao" alt="Coração">
+            <img src="../assets/img/coracao.svg" class="icone-coracao" alt="Coração">
             <span class="texto-topo">ÁUDIOBOOK IMERSIVO</span>
         </div>
 
         <!-- =====================================================
              TÍTULO DO LIVRO (imagem)
              ===================================================== -->
-        <img class="titulo" src="../img/titulo.svg" alt="Título do Livro">
+        <img class="titulo" src="./img/titulo.svg" alt="Título do Livro">
 
         <!-- =====================================================
              PERSONAGEM + BOTÃO INICIAR
              O personagem fica acima do botão com sobreposição
              ===================================================== -->
         <div class="area-personagem">
-            <img class="menino" src="../img/menino.svg" alt="Personagem Menino">
-            <a href="./pagina1.html" class="btn-iniciar">INICIAR</a>
+            <img class="menino" src="./img/menino.svg" alt="Personagem Menino">
+            <a href="./pages/page-1.html" class="btn-iniciar">INICIAR</a>
         </div>
 
     </main>
@@ -78,14 +83,15 @@
         <p>©2025 Lorena Jacob • Todos os Direitos Reservados</p>
 
         <a href="https://www.lorenajacob.com.br/">
-            <img src="../img/logo.svg" class="logo-rodape" alt="Logo Lorena Jacob">
+            <img src="../assets/img/logo.svg" class="logo-rodape" alt="Logo Lorena Jacob">
         </a>
     </footer>
 
     <!-- =====================================================
          SCRIPT GLOBAL (menu, comportamentos gerais...)
          ===================================================== -->
-    <script src="../base.js"></script>
+    <script src="../assets/js/base.js"></script>
+    <script src="../assets/js/book-config.js" data-config-path="./config.json"></script>
 
 
 </body>

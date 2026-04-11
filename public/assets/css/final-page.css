@@ -1,0 +1,188 @@
+/* ============================================================================
+   FINAL-PAGE.CSS — Estilos para a Página Final (Página 19)
+   
+   Consolidação do pagina19.css
+   Layout especial com background full, texto overlay, e personagem
+   ============================================================================ */
+
+/* ============================================================================
+   1. BACKGROUND FULLSCREEN
+   ============================================================================ */
+
+body[data-page="page-final"] {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Desktop background */
+body[data-page="page-final"] {
+    background-image: var(--final-background-desktop, none);
+}
+
+/* Mobile background */
+@media (max-width: 768px) {
+    body[data-page="page-final"] {
+        background-image: var(--final-background-mobile, var(--final-background-desktop, none));
+    }
+}
+
+/* ============================================================================
+   2. TEXTO FINAL (Overlay no background)
+   ============================================================================ */
+
+.texto-final {
+    position: absolute;
+    top: 210px;
+    left: 36%;
+    transform: translateX(-50%);
+    width: 600px;
+    z-index: 5;
+    text-align: left;
+}
+
+.texto-final h1 {
+    font-family: 'Motter Corpus', serif;
+    font-size: 45px;
+    line-height: 50px;
+    color: #F3EED2;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Parte em branco (dentro do texto final) */
+.parte-branca {
+    color: #FFFFFF;
+}
+
+/* ============================================================================
+   3. BOTÃO VOLTAR AO INÍCIO
+   ============================================================================ */
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 18px 50px;
+    background-color: #EFEFEF;
+    border: none;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #222;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 10;
+    position: relative;
+}
+
+.btn-voltar:hover {
+    background-color: #DCDCDC;
+    transform: translateY(-2px);
+}
+
+.btn-voltar:active {
+    transform: translateY(0);
+}
+
+/* ============================================================================
+   4. IMAGEM DO PERSONAGEM (Dedo/Caractere)
+   ============================================================================ */
+
+.dedo-img {
+    position: fixed;
+    right: 240px;
+    bottom: 70px;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.dedo-img img {
+    width: 600px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* ============================================================================
+   5. RESPONSIVIDADE (TABLET)
+   ============================================================================ */
+
+@media (max-width: 768px) {
+    .texto-final {
+        top: 160px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+    }
+
+    .texto-final h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .btn-voltar {
+        margin-top: 30px;
+        padding: 16px 35px;
+        font-size: 15px;
+    }
+
+    .dedo-img {
+        left: 85px;
+        right: auto;
+        bottom: 100px;
+    }
+
+    .dedo-img img {
+        width: 110vw;
+        max-width: 520px;
+    }
+}
+
+/* ============================================================================
+   6. RESPONSIVIDADE (MOBILE)
+   ============================================================================ */
+
+@media (max-width: 600px) {
+    .texto-final {
+        top: 145px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 280px;
+    }
+
+    .texto-final h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .btn-voltar {
+        margin-top: 25px;
+        padding: 14px 30px;
+        font-size: 14px;
+    }
+
+    .dedo-img {
+        left: 50px;
+        bottom: 80px;
+    }
+
+    .dedo-img img {
+        width: 100vw;
+        max-width: 400px;
+    }
+}
+
+/* ============================================================================
+   7. FIX ANDROID (Viewports com altura fixa)
+   ============================================================================ */
+
+@media screen and (max-height: 800px) {
+    body[data-page="page-final"] {
+        min-height: 100dvh !important;
+    }
+}

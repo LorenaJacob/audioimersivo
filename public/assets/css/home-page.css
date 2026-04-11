@@ -1,0 +1,186 @@
+/* ============================================================================
+   HOME-PAGE.CSS — Estilos para a Página Inicial (Home)
+   
+   Consolidação do inicio.css
+   ============================================================================ */
+
+/* ============================================================================
+   1. TOPO DA PÁGINA (Logo audiobook imersivo + coração)
+   ============================================================================ */
+
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+.icone-coracao {
+    width: 22px;
+    height: auto;
+    object-fit: contain;
+}
+
+.texto-topo {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================================================
+   2. TÍTULO DO LIVRO (Imagem)
+   ============================================================================ */
+
+.titulo {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto 20px;
+    object-fit: contain;
+}
+
+/* ============================================================================
+   3. SEÇÃO DO PERSONAGEM E BOTÃO
+   ============================================================================ */
+
+.area-personagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-top: 20px;
+}
+
+/* Personagem (menino, boneco, etc) */
+.menino {
+    width: 65%;
+    max-width: 150px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: -6.2px;
+    object-fit: contain;
+}
+
+/* ============================================================================
+   4. BOTÃO INICIAR
+   ============================================================================ */
+
+.btn-iniciar {
+    display: block;
+    background-color: #FFA844;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+
+    padding: 16px 0;
+    width: 80%;
+    max-width: 280px;
+
+    border-radius: 14px;
+    text-decoration: none;
+    text-align: center;
+
+    position: relative;
+    z-index: 1;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+}
+
+.btn-iniciar:hover {
+    background-color: #FF9530;
+    transform: translateY(-2px);
+}
+
+.btn-iniciar:active {
+    transform: translateY(0);
+}
+
+/* ============================================================================
+   5. RESPONSIVIDADE (MOBILE/TABLET)
+   ============================================================================ */
+
+@media (max-width: 768px) {
+    .topo {
+        margin-top: 25px;
+    }
+
+    .titulo {
+        margin: 60px auto 15px;
+        max-width: 400px;
+    }
+
+    .area-personagem {
+        margin-top: 25px;
+    }
+
+    .menino {
+        width: 62%;
+        margin-bottom: -5px;
+    }
+
+    .btn-iniciar {
+        font-size: 20px;
+        padding: 15px 0;
+        width: 82%;
+    }
+}
+
+@media (max-width: 600px) {
+    .area-personagem {
+        margin-top: 30px;
+    }
+
+    .icone-coracao {
+        width: 20px;
+    }
+
+    .texto-topo {
+        font-size: 13px;
+    }
+
+    .topo {
+        margin-top: 30px;
+    }
+
+    .titulo {
+        margin: 80px auto 0px;
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 15px;
+    }
+
+    .menino {
+        width: 60%;
+        margin-bottom: -7px;
+    }
+
+    .btn-iniciar {
+        width: 85%;
+        font-size: 20px;
+        padding: 14px 0;
+    }
+
+    .area-ajuda {
+        margin-bottom: 80px;
+    }
+}
+
+/* ============================================================================
+   6. FIX ANDROID (Viewports com altura fixa)
+   ============================================================================ */
+
+@media screen and (max-height: 800px) {
+    body {
+        min-height: 100dvh !important;
+    }
+
+    main,
+    .container {
+        flex: 1 0 auto !important;
+    }
+}

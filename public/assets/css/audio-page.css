@@ -1,0 +1,283 @@
+/* ============================================================================
+   AUDIO-PAGE.CSS — Estilos para as Páginas de Áudio (Páginas 1-18)
+   
+   Consolidação de pagina1.css até pagina18.css (todos vazios ou com pequenos ajustes)
+   Este arquivo define os estilos do player de áudio e layout das páginas de conteúdo
+   ============================================================================ */
+
+/* ============================================================================
+   1. TÍTULO DO LIVRO (Imagem que aparece no topo de cada página)
+   ============================================================================ */
+
+.titulo {
+    display: block;
+    width: 100%;
+    max-width: 349px;
+    margin: 20px auto 14px;
+    object-fit: contain;
+}
+
+/* ============================================================================
+   2. INDICADOR DE PÁGINA (ex: "PÁGINA 01")
+   ============================================================================ */
+
+.pagina-indicador {
+    background-color: #0C572A;    /* Verde escuro */
+    color: white;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    width: fit-content;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+/* ============================================================================
+   3. CARD DO ÁUDIO (Container principal)
+   ============================================================================ */
+
+.audio-card {
+    width: 100%;
+    max-width: 350px;
+    background: white;
+    padding: 25px 20px;
+    border-radius: 18px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    margin: 40px auto 20px;
+    box-shadow: none;
+}
+
+/* ============================================================================
+   4. CONTROLES DO ÁUDIO (Play, Voltar, Avançar)
+   ============================================================================ */
+
+/* Área central com player + avançar/voltar */
+.audio-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin-bottom: 20px;
+}
+
+/* Botão Play/Pause circular */
+.audio-play {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 110px;
+    height: 110px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.audio-play:hover {
+    transform: scale(1.05);
+}
+
+/* Ícones sobrepostos (Play e Pause) */
+.audio-play img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    pointer-events: none;
+}
+
+#pauseIcon {
+    display: none;
+}
+
+/* Botões Voltar e Avançar */
+.audio-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.audio-nav:hover {
+    opacity: 0.7;
+}
+
+.audio-nav img {
+    width: 30px;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.audio-nav span {
+    font-size: 13px;
+    color: #D7D7D7;
+    font-weight: 500;
+}
+
+.audio-nav a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+/* ============================================================================
+   5. WAVEFORM (Wavesurfer - Visualização do áudio)
+   ============================================================================ */
+
+.audio-wave-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0 5px;
+}
+
+/* Tempo atual */
+#currentTime {
+    font-size: 12px;
+    color: #808080;
+    font-weight: 600;
+    min-width: 35px;
+    text-align: right;
+}
+
+/* Container do waveform (barra de ondas) */
+#waveform {
+    flex: 1;
+    min-width: 150px;
+    height: 60px;
+}
+
+/* Tempo total */
+#totalTime {
+    font-size: 12px;
+    color: #808080;
+    font-weight: 600;
+    min-width: 35px;
+    text-align: left;
+}
+
+/* ============================================================================
+   6. RESPONSIVIDADE (MOBILE/TABLET)
+   ============================================================================ */
+
+@media (max-width: 768px) {
+    .audio-card {
+        max-width: 350px;
+        padding: 22px 18px;
+        border-radius: 18px;
+    }
+
+    .audio-center {
+        gap: 38px;
+        margin-bottom: 18px;
+    }
+
+    .audio-play {
+        width: 90px;
+        height: 90px;
+    }
+
+    .audio-play img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .audio-nav img {
+        width: 26px;
+    }
+
+    .audio-nav span {
+        font-size: 12px;
+    }
+
+    .titulo {
+        max-width: 315px;
+        margin: 16px auto 12px;
+    }
+
+    .pagina-indicador {
+        font-size: 20px;
+        padding: 12px 28px;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .audio-card {
+        width: 330px;
+        max-width: 330px;
+        padding: 25px 20px;
+        margin: 34px auto 15px;
+    }
+
+    .audio-center {
+        gap: 38px;
+        margin-bottom: 22px;
+    }
+
+    .audio-play {
+        width: 96px;
+        height: 96px;
+    }
+
+    .audio-play img {
+        width: 96px;
+        height: 96px;
+    }
+
+    .audio-nav img {
+        width: 34px;
+    }
+
+    .audio-nav span {
+        font-size: 14px;
+    }
+
+    .titulo {
+        max-width: 100%;
+        margin: 14px auto 10px;
+    }
+
+    .pagina-indicador {
+        font-size: 20px;
+        padding: 12px 28px;
+        margin: 0 auto 18px;
+    }
+
+    #currentTime,
+    #totalTime {
+        font-size: 12px;
+        min-width: 34px;
+    }
+
+    #waveform {
+        min-width: 170px;
+        height: 68px;
+    }
+}
+
+/* ============================================================================
+   7. AJUSTES ESPECÍFICOS POR PÁGINA
+   ============================================================================ */
+
+/* Página 1: Sem botão voltar */
+body[data-page="page-1"] #btnVoltar {
+    opacity: 0;
+    pointer-events: none;
+}
+
+

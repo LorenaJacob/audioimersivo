@@ -1,106 +1,119 @@
+# Audioimersivo
 
+Projeto de audiobook infantil imersivo e interativo, construido em HTML, CSS e JavaScript puro.
 
-# 📚 Audiobook Imersivo Infantil e Interativo
+A proposta e servir como uma base reutilizavel para livros digitais com audio, mantendo uma camada global compartilhada e uma camada individual por livro.
 
-### por viithorr
+## O Que O Projeto Faz
 
-Um projeto interativo desenvolvido para criar uma experiência de leitura totalmente envolvente para crianças.
-Este audiobook combina **navegação por páginas**, **leitura em áudio**, **player customizado**, e uma interface lúdica otimizada para **mobile-first**.
+- Exibe uma pagina inicial do livro.
+- Organiza paginas de leitura com player de audio.
+- Usa waveform com Wavesurfer.js.
+- Controla play, pause, tempo atual e duracao.
+- Faz navegacao entre paginas por configuracao.
+- Mantem cabecalho, menu mobile e rodape compartilhados.
+- Permite que cada livro tenha seus proprios assets, audios, fontes, cores e textos.
 
----
+## Tecnologias
 
-##   Destaques do Projeto
+- HTML5
+- CSS3 responsivo
+- JavaScript Vanilla
+- Wavesurfer.js
+- Configuracao por JSON
+- Servidor estatico para desenvolvimento local
 
-* 🎧 **Player de áudio customizado**
+## Estrutura Geral
 
-  * Wavesurfer.js com waveform personalizada
-  * Botões Play / Pause com troca dinâmica de ícones
-  * Tempo atual e duração sincronizados
-  * Reset automático ao finalizar o áudio
-
-*  **Design mobile-first**
-
-  * Interface responsiva
-  * Componentes pensados para telas pequenas
-  * Menu lateral mobile (hambúrguer) com overlay interativo
-
-*  **Navegação entre páginas do audiobook**
-
-  * Botões avançar / voltar
-  * Controle inteligente (Voltar desativado na página 1)
-
-*  **UI Afetiva e infantil** (Marca @lorenajacob https://www.lorenajacob.com.br/)
-
-  * Cores suaves
-  * Tipografia Quicksand
-  * Ícones ilustrados
-  * Personagens e elementos visuais personalizados
-
-* **Código organizado e escalável**
-
-  * Arquitetura separada por páginas
-  * CSS base + CSS por página
-  * JavaScript modular com funções específicas
-  * Código limpo, comentado e padronizado
-
----
-
-##  **Tecnologias Utilizadas**
-
-* **HTML5 semântico**
-* **CSS3 (mobile-first + responsivo)**
-* **JavaScript Vanilla**
-* **Wavesurfer.js** para visualização e controle do áudio
-* **Git + GitHub**
-* **Hospedagem via GitHub Pages**
-
----
-
-
-###  Página Inicial
-
-<img width="1912" height="897" alt="image" src="https://github.com/user-attachments/assets/cfb866d0-4ad2-4736-a762-867538855739" />
-
-
-###  Página 1 do Audiobook
-
-<img width="1905" height="903" alt="image" src="https://github.com/user-attachments/assets/e9a7bd42-f28e-41ac-956b-9889428c116a" />
-
-
-
-
-##  **Estrutura do Projeto**
-
-```
+```text
 public/
-│── fonts/
-│── audios/
-│── img/
-│── inicio.html
-│── pagina1.html
-│── base.css
-│── inicio.css
-│── pagina1.css
-│── base.js
-│── audio1.js
+  assets/
+    css/
+    js/
+    img/
+  o-dia-que-meu-dedo-decidiu-falar/
+    index.html
+    config.json
+    styles.css
+    img/
+    audios/
+    fonts/
+    pages/
 ```
 
----
+## Camada Global
 
-##  **Próximos Passos (Roadmap)**
+A pasta `public/assets/` contem arquivos compartilhados entre livros:
 
-* Página 2, 3, 4... do audiobook
-* Transições animadas entre páginas
-* Player com barra de progresso clicável
-* Legendas sincronizadas com o áudio
-* Versão completa para desktop
-* Acessibilidade (WAI-ARIA)
+- estilos globais;
+- estilos de home, paginas de audio e pagina final;
+- scripts globais;
+- player universal;
+- icones e logos compartilhados.
 
----
+## Camada Por Livro
 
-## 📬 **Contato**
+Cada livro deve ter sua propria pasta dentro de `public/`.
 
-Criado por **viithorr**
-📧 Entre em contato: **vithortech@gmail.com**
-🌐 Projeto online: https://audioimersivo.lorenajacob.com.br/o-dia-que-meu-dedo-decidiu-falar/
+Dentro dela ficam os arquivos que podem variar:
 
+- `config.json`;
+- `styles.css`;
+- imagens;
+- audios;
+- fontes especificas;
+- paginas HTML do livro.
+
+## Livro Atual
+
+O livro atual fica em:
+
+```text
+public/o-dia-que-meu-dedo-decidiu-falar/
+```
+
+As paginas oficiais ficam em:
+
+```text
+public/o-dia-que-meu-dedo-decidiu-falar/pages/
+```
+
+## Como Rodar Localmente
+
+Na raiz do projeto:
+
+```powershell
+python -m http.server 8000
+```
+
+Depois abra:
+
+```text
+http://127.0.0.1:8000/public/o-dia-que-meu-dedo-decidiu-falar/index.html
+```
+
+## Como Criar Novos Livros
+
+Use a estrutura do livro atual como base:
+
+- copie a pasta do livro;
+- troque `config.json`;
+- troque imagens em `img/`;
+- troque audios em `audios/`;
+- troque fontes em `fonts/`, se o livro tiver fonte propria;
+- use `styles.css` para ajustes especificos do livro;
+- evite alterar `public/assets/` quando a mudanca for especifica de um livro.
+
+## Regras De Escalabilidade
+
+- `public/assets/` e compartilhado por todos os livros.
+- Cada livro deve isolar seus proprios assets.
+- O fluxo de paginas e audios deve vir do `config.json`.
+- A estrutura oficial das paginas deve ficar em `pages/`.
+- Arquivos antigos ou experimentais nao devem ser usados como modelo para novos livros.
+
+## Projeto Online
+
+```text
+https://audioimersivo.lorenajacob.com.br/o-dia-que-meu-dedo-decidiu-falar/
+```
