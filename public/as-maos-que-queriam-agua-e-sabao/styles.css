@@ -28,9 +28,6 @@ body:not([data-page]) .titulo {
 
 body[data-page] {
     background-color: #72b7e0;
-    min-height: 100dvh;
-    height: 100dvh;
-    overflow: hidden;
 }
 
 body[data-page] .pagina-indicador {
@@ -38,99 +35,9 @@ body[data-page] .pagina-indicador {
     color: #7b318b;
 }
 
-body[data-page] main,
-body[data-page] .container {
-    min-height: 0;
-}
-
-body[data-page]:not([data-page="page-final"]) main.container {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 10px;
-    padding-bottom: 8px;
-    overflow: hidden;
-}
-
-body[data-page]:not([data-page="page-final"]) .titulo {
-    max-width: 250px;
-    margin: 6px auto 4px;
-}
-
-body[data-page]:not([data-page="page-final"]) .pagina-indicador {
-    margin: 0 auto 10px;
-}
-
-body[data-page]:not([data-page="page-final"]) .audio-card {
-    margin: 8px auto 8px;
-}
-
-body[data-page]:not([data-page="page-final"]) .area-ajuda {
-    margin-top: auto;
-    padding: 8px 0 12px;
-    flex-shrink: 0;
-}
-
-body[data-page] .topo-site,
-body[data-page] .rodape {
-    flex-shrink: 0;
-}
-
-body[data-page] .rodape {
-    padding: 16px 0;
-}
-
-@media (min-width: 601px) {
-    body[data-page]:not([data-page="page-final"]) main.container {
-        padding-top: 6px;
-        padding-bottom: 4px;
-    }
-
-    body[data-page]:not([data-page="page-final"]) .audio-card {
-        max-width: 320px;
-        padding: 20px 18px;
-    }
-
-    body[data-page]:not([data-page="page-final"]) .audio-center {
-        gap: 38px;
-        margin-bottom: 16px;
-    }
-
-    body[data-page]:not([data-page="page-final"]) .audio-play,
-    body[data-page]:not([data-page="page-final"]) .audio-play img {
-        width: 96px;
-        height: 96px;
-    }
-
-    body[data-page]:not([data-page="page-final"]) .audio-nav img {
-        width: 28px;
-    }
-
-    body[data-page]:not([data-page="page-final"]) .audio-nav span {
-        font-size: 12px;
-    }
-
-    body[data-page]:not([data-page="page-final"]) #waveform {
-        height: 52px;
-    }
-
-    body[data-page] .rodape {
-        padding: 12px 0;
-    }
-}
-
 body[data-page="page-final"] {
-    min-height: 100dvh;
-    height: 100dvh;
-    overflow: hidden;
     background-image: none !important;
     background-color: #72b7e0;
-}
-
-body[data-page="page-final"] main {
-    flex: 1 1 auto;
-    min-height: 0;
 }
 
 body:not([data-page]) .texto-topo,
@@ -173,43 +80,6 @@ body:not([data-page]) .rodape {
 }
 
 @media (max-width: 600px) {
-    body[data-page]:not([data-page="page-final"]) main.container {
-        padding-top: 4px;
-        padding-bottom: 2px;
-    }
-
-    body[data-page]:not([data-page="page-final"]) .titulo {
-        max-width: 300px;
-        margin: 6px auto 6px;
-    }
-
-    body[data-page]:not([data-page="page-final"]) .pagina-indicador {
-        margin: 0 auto 10px;
-    }
-
-    body[data-page]:not([data-page="page-final"]) .audio-card {
-        margin: 8px auto 8px;
-    }
-
-    body[data-page]:not([data-page="page-final"]) .area-ajuda {
-        padding: 4px 0 25px;
-    }
-
-    body[data-page]:not([data-page="page-final"]) .area-ajuda p,
-    body[data-page]:not([data-page="page-final"]) .area-ajuda a,
-    body[data-page]:not([data-page="page-final"]) #entre-contato {
-        font-size: 11px;
-        line-height: 1.2;
-    }
-
-    body[data-page] .rodape {
-        padding: 8px 0;
-    }
-
-    body[data-page] .rodape p {
-        margin-bottom: 6px;
-    }
-
     body:not([data-page]) .container {
         padding-top: 8px;
         padding-bottom: 0;
@@ -255,11 +125,7 @@ body[data-page="page-final"] .personagem-final img {
 
 body[data-page="page-final"] .personagem-final {
     right: 240px;
-    bottom: 120px;
-}
-
-body[data-page="page-final"] .texto-final {
-    top: 160px;
+    bottom: 130px;
 }
 
 @media (max-width: 600px) {
@@ -270,10 +136,6 @@ body[data-page="page-final"] .texto-final {
     body[data-page="page-final"] .personagem-final {
         left: 150px;
         right: auto;
-        bottom: 150px;
-    }
-
-    body[data-page="page-final"] .texto-final {
-        top: 130px;
+        bottom: 180px;
     }
 }
