@@ -1,0 +1,184 @@
+{
+  "book": {
+    "title": "O xixi que queria um tchau",
+    "slug": "o-xixi-que-queria-um-tchau",
+    "totalPages": 24,
+    "author": "Lorena Jacob"
+  },
+  "assets": {
+    "globalPath": "../../assets",
+    "bookPath": ".."
+  },
+  "audio": {
+    "waveColor": "#FFA844",
+    "progressColor": "#0E6430",
+    "barWidth": 3,
+    "barGap": 2,
+    "height": 60,
+    "responsive": true,
+    "cursorWidth": 0
+  },
+  "pages": [
+    {
+      "number": "1-2",
+      "slug": "page-1-2",
+      "file": "page-1-2.html",
+      "audio": "audios/pagina01e02.mp3",
+      "title": "Página 1 & 2",
+      "showBackBtn": false,
+      "nextPage": "page-3-4"
+    },
+    {
+      "number": "3-4",
+      "slug": "page-3-4",
+      "file": "page-3-4.html",
+      "audio": "audios/pagina03e04.mp3",
+      "title": "Página 3 & 4",
+      "showBackBtn": true,
+      "prevPage": "page-1-2",
+      "nextPage": "page-5-6"
+    },
+    {
+      "number": "5-6",
+      "slug": "page-5-6",
+      "file": "page-5-6.html",
+      "audio": "audios/pagina05e06.mp3",
+      "title": "Página 5 & 6",
+      "showBackBtn": true,
+      "prevPage": "page-3-4",
+      "nextPage": "page-7-8"
+    },
+    {
+      "number": "7-8",
+      "slug": "page-7-8",
+      "file": "page-7-8.html",
+      "audio": "audios/pagina07e08.mp3",
+      "title": "Página 7 & 8",
+      "showBackBtn": true,
+      "prevPage": "page-5-6",
+      "nextPage": "page-9-10"
+    },
+    {
+      "number": "9-10",
+      "slug": "page-9-10",
+      "file": "page-9-10.html",
+      "audio": "audios/pagina09e10.mp3",
+      "title": "Página 9 & 10",
+      "showBackBtn": true,
+      "prevPage": "page-7-8",
+      "nextPage": "page-13-14"
+    },
+    {
+      "number": "13-14",
+      "slug": "page-13-14",
+      "file": "page-13-14.html",
+      "audio": "audios/pagina13e14.mp3",
+      "title": "Página 13 & 14",
+      "showBackBtn": true,
+      "prevPage": "page-9-10",
+      "nextPage": "page-15-16"
+    },
+    {
+      "number": "15-16",
+      "slug": "page-15-16",
+      "file": "page-15-16.html",
+      "audio": "audios/pagina15e16.mp3",
+      "title": "Página 15 & 16",
+      "showBackBtn": true,
+      "prevPage": "page-13-14",
+      "nextPage": "page-17-18"
+    },
+    {
+      "number": "17-18",
+      "slug": "page-17-18",
+      "file": "page-17-18.html",
+      "audio": "audios/pagina17e18.mp3",
+      "title": "Página 17 & 18",
+      "showBackBtn": true,
+      "prevPage": "page-15-16",
+      "nextPage": "page-19"
+    },
+    {
+      "number": "19",
+      "slug": "page-19",
+      "file": "page-19.html",
+      "audio": "audios/pagina19.mp3",
+      "title": "Página 19",
+      "showBackBtn": true,
+      "prevPage": "page-17-18",
+      "nextPage": "page-21-22"
+    },
+    {
+      "number": "21-22",
+      "slug": "page-21-22",
+      "file": "page-21-22.html",
+      "audio": "audios/pagina21e22.mp3",
+      "title": "Página 21 & 22",
+      "showBackBtn": true,
+      "prevPage": "page-19",
+      "nextPage": "page-23-24"
+    },
+    {
+      "number": "23-24",
+      "slug": "page-23-24",
+      "file": "page-23-24.html",
+      "audio": "audios/pagina23e24.mp3",
+      "title": "Página 23 & 24",
+      "showBackBtn": true,
+      "prevPage": "page-21-22",
+      "nextPage": "page-final"
+    },
+    {
+      "number": "final",
+      "slug": "page-final",
+      "file": "page-final.html",
+      "audio": null,
+      "title": "Página Final",
+      "showBackBtn": false,
+      "prevPage": "page-23-24",
+      "isFinalPage": true
+    }
+  ],
+  "home": {
+    "title": "O xixi que queria um tchau",
+    "browserTitle": "O xixi que queria um tchau",
+    "subtitle": "ÁUDIOBOOK IMERSIVO",
+    "titleImage": "./img/titulo.svg",
+    "characterImage": "./img/menina.svg",
+    "startButtonText": "INICIAR",
+    "startButtonLink": "pages/page-1-2.html"
+  },
+  "header": {
+    "links": {
+      "instagramUrl": "https://www.instagram.com/lorenajacob.st/",
+      "collectionUrl": "#",
+      "shopUrl": "https://www.lorenajacob.com.br/shop",
+      "siteUrl": "https://www.lorenajacob.com.br/",
+      "whatsappUrl": "https://api.whatsapp.com/send/?phone=5527998206121"
+    },
+    "labels": {
+      "collection": "COLEÇÃO",
+      "shop": "LOJA",
+      "site": "SITE",
+      "contact": "ENTRE EM CONTATO"
+    }
+  },
+  "footer": {
+    "copyright": "©2025 Lorena Jacob • Todos os Direitos Reservados",
+    "websiteUrl": "https://www.lorenajacob.com.br/",
+    "instagramUrl": "https://www.instagram.com/lorenajacob.st/",
+    "whatsappUrl": "https://wa.me/5527998206121?text=Olá%2C%20estou%20com%20problemas%20no%20áudiobook%20do%20livro%20%22O%20xixi%20que%20queria%20um%20tchau%22"
+  },
+  "helpSection": {
+    "text": "Problemas com o áudio?",
+    "buttonText": "Entre em contato aqui",
+    "whatsappUrl": "https://wa.me/5527998206121?text=Olá%2C%20estou%20com%20problemas%20no%20áudiobook%20do%20livro%20%22O%20xixi%20que%20queria%20um%20tchau%22"
+  },
+  "final": {
+    "textHtml": "<span class=\"parte-branca\">QUANDO EU CUIDO DO<br>MEU CORPO,</span>ELE CUIDA<br>DE MIM TAMBÉM.",
+    "buttonText": "Voltar ao início",
+    "buttonLink": "../index.html",
+    "backgroundDesktop": null,
+    "backgroundMobile": null
+  }
+}

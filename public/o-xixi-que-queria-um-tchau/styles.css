@@ -1,0 +1,133 @@
+/* Ajustes especificos do livro "O xixi que queria um tchau". */
+
+body:not([data-page]) {
+    background-color: #fffbd2;
+    min-height: 100dvh;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+body:not([data-page]) .container {
+    min-height: 0;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+body:not([data-page]) .topo {
+    margin-top: 8px;
+}
+
+body:not([data-page]) .titulo {
+    max-width: 420px;
+    margin: 28px auto 10px;
+}
+
+body[data-page] {
+    background-color: #fffbd2;
+}
+
+body[data-page] .pagina-indicador {
+    background-color: #ac9268;
+    color: #ffffff;
+}
+
+body[data-page="page-final"] {
+    background-image: none !important;
+    background-color: #fffbd2;
+}
+
+body:not([data-page]) .area-personagem .menina {
+    width: 68%;
+    max-width: 260px;
+    margin-bottom: -55px;
+    position: relative;
+    z-index: 10;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+body:not([data-page]) .area-personagem {
+    margin-top: 8px;
+}
+
+body:not([data-page]) .btn-iniciar {
+    max-width: 300px;
+    background-color: #b09772;
+    position: relative;
+    z-index: 20;
+}
+
+body:not([data-page]) .area-ajuda {
+    flex-shrink: 0;
+    padding: 18px 0 12px;
+}
+
+body:not([data-page]) .rodape {
+    flex-shrink: 0;
+    padding: 16px 0;
+}
+
+@media (max-width: 600px) {
+    body:not([data-page]) .container {
+        padding-top: 8px;
+        padding-bottom: 0;
+    }
+
+    body:not([data-page]) .topo {
+        margin-top: 6px;
+    }
+
+    body:not([data-page]) .titulo {
+        max-width: 320px;
+        margin: 26px auto 8px;
+    }
+
+    body:not([data-page]) .area-personagem .menina {
+        width: 72%;
+        max-width: 220px;
+        margin-bottom: -51px;
+    }
+
+    body:not([data-page]) .area-personagem {
+        margin-top: 2px;
+    }
+
+    body:not([data-page]) .btn-iniciar {
+        width: 82%;
+        font-size: 19px;
+        padding: 13px 0;
+    }
+
+    body:not([data-page]) .area-ajuda {
+        padding: 14px 0 8px;
+    }
+
+    body:not([data-page]) .rodape {
+        padding: 14px 0;
+    }
+}
+
+body[data-page="page-final"] .personagem-final img {
+    width: 320px;
+}
+
+body[data-page="page-final"] .personagem-final {
+    right: 240px;
+    bottom: 130px;
+}
+
+@media (max-width: 600px) {
+    body[data-page="page-final"] .personagem-final img {
+        width: 200px;
+    }
+
+    body[data-page="page-final"] .personagem-final {
+        left: 150px;
+        right: auto;
+        bottom: 180px;
+    }
+}
